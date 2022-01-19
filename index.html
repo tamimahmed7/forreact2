@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="sass/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!--popins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--popins-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            tamCoder
+        </div>
+        <div class="nav-items">
+            <li><a href="#" style="  transition: left 3s ease;">Home</a></li>
+            <li style="  transition: left 4s ease;"><a href="#">About</a></li>
+            <li style="  transition: left 5s ease;"><a href="#">Blogs</a></li>
+            <li style="  transition: left 6s ease;"><a href="#">Contact</a></li>
+            <li style="  transition: left 7s ease;"><a href="#">Feedback</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    </div>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+    <div class="hero">
+        <div class="animation"><img src="" width="100%" height="100%" alt=""></div>
+        <div class="container hero-area">
+
+            <div class="hero-itame hero-itame1">
+
+                <div class="h-i-itame-content h-i-itame-content-1">
+                    <h1>We create top quality Template, & web appication.
+                    </h1>
+                </div>
+                <div class="h-i-itame-content h-i-itame-content-2">
+                    <div class="hero-btns">
+                        <div class="hero-btn hero-btn1">
+                            <a href="" class="" style="text-decoration: none;">Free</a>
+                        </div>
+                        <div class=" hero-btn hero-btn2">
+                            <a href=" " class="" style="text-decoration: none;">Premium</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" hero-itame hero-itame2 ">
+
+                <img src="sass/IMG/Usability testing-pana (2).png " width="100% " height="100% " alt=" ">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="c-prodact-body">
+        <h2> All Catagores</h2>
+        <div class="container catagory-con">
+            <div class="catagory-box catagory-box1"><img src="https://img.icons8.com/color/48/000000/wordpress.png" />
+
+            </div>
+            <div class="catagory-box catagory-box2"><img src="https://img.icons8.com/color/48/000000/adobe-xd--v1.png" />
+
+            </div>
+            <div class="catagory-box catagory-box3">
+                <img src="https://img.icons8.com/fluency/48/000000/figma.png" />
+            </div>
+            <div class="catagory-box catagory-box4">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" />
+
+            </div>
+            <div class="catagory-box catagory-box5">
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
+            </div>
+            <div class="catagory-box catagory-box6">
+                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
+            </div>
+        </div>
+
+        <div class="c-p-wrapper ">
+
+            <div class="c-p-card">
+                <img src="images/template-10_87zca5wb.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                E-commerce</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template-16-preview_ykax9g1b.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Magazine </span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template-1_r7vco0z6.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Blogs</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template-2_80qlnfi4.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Portfolio</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template14_rctjlhww.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Landing</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="c-p-card">
+                <img src="images/template-18_w71ulom6.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Social media</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template-18_w71ulom6.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Business</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="c-p-card">
+                <img src="images/template-18_w71ulom6.webp" alt="">
+                <div class="c-p-content">
+                    <div class="c-p-row">
+                        <div class="c-details">
+                            <span>
+                                Personal blog</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="c-buttons">
+                        <button>View Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="prodact-body">
+        <h2>Our Latest Template</h2>
+
+        <div class="p-wrapper container">
+
+            <div class="p-card">
+                <img src="images/template-10_87zca5wb.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$30</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="images/template-16-preview_ykax9g1b.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$80</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="images/template-1_r7vco0z6.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="images/template-2_80qlnfi4.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$30</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="p-card">
+                <img src="images/template14_rctjlhww.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$80</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="images/template-18_w71ulom6.webp" alt="">
+                <div class="p-content">
+                    <div class="p-row">
+                        <div class="details">
+                            <span>
+                                MediaTel</span>
+                            <p>Premium MediaTel
+                            </p>
+                        </div>
+                        <div class="price">$80</div>
+                    </div>
+                    <div class="buttons">
+                        <button>Buy Now</button>
+                        <button class="cart-btn">Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="see-all"> <button><a href="#"> All Template</a></button></div>
+
+
+    </div>
+
+    <div class="tallk">
+
+
+        <div class="tallk-itame tallk-itame1 ">
+            <h3>Do you have an idea for a custom website or WordPress plugin?</h3>
+        </div>
+        <div class="tallk-itame  tallk-itame2 ">
+            <div class="talk-btn">
+                <a href="" class="" style="text-decoration: none;">Lets Talk</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-con">
+
+
+            <div class="footer-itame footer-itame1">
+                <h5>tamCoder</h5>
+                <p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+            </div>
+            <div class="footer-itame">
+
+                <h5>IT Services</h5>
+                <p>Software Development</p>
+                <p> Web Development </p>
+                <p> Analytic Solutions </p>
+                <p> Cloud and DevOps</p>
+                <p> Product Design</p>
+
+
+
+
+
+            </div>
+            <div class="footer-itame">
+
+                <h5>Contact Info</h5>
+                <p>374 FA Tower, William S Blvd 2721, IL, USA</p>
+                <p>(+880)155-69569</p>
+                <p>support@tamcoder.com</p>
+                <p>Opening Hours: 10:00 - 18:00</p>
+
+
+
+
+
+
+
+            </div>
+            <div class="footer-itame">
+
+                <h5>Newsletter</h5>
+                <p>We denounce with righteous and in and dislike men who are so beguiled and demo realized.
+
+                </p>
+                <form action="#">
+                    <input type="email" class="email" placeholder="Email" required>
+                    <button type="send" <i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="end">
+            <h6>
+                <p>© Copyright 2021 tamim ahmed tam . All Rights Reserved.
+            </h6>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
